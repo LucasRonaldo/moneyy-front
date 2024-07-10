@@ -5,6 +5,7 @@ import {
     Route,
     Routes
 } from "react-router-dom";
+import CadastroCliente from "../components/Cadastro";
 
 
 
@@ -13,9 +14,7 @@ const AppRouter = () => {
     return (
         <BrowserRouter>
             <Routes>
-           
-               
-
+            <Route path="/cadastro/cliente" element={<CadastroCliente />} />
             </Routes>
         </BrowserRouter>
     )
